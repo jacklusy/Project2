@@ -10,17 +10,28 @@
 }
 .container{
 background-color: #1d1d2d88;
-padding-top: 30px;
+padding-top: 10px;
+height: 50px;
 }
 .ul{
     display: inline-block;
     float:right;
-    width: 250px;
+    width: 150px;
     text-align: center;
     padding-top: 0px;
-    padding-bottom: 70px;
     
 }
+
+.div7{
+    width: 150px;
+    text-align: center;
+    
+}
+
+.jk{
+    height: 50px;
+}
+
 p{
     clear: both;
 }
@@ -28,10 +39,7 @@ p{
 .links{
     color: white;
     font-size: 25px;
-    padding: 20px;
     text-decoration: none;
-   
-    
 }
 
 .links:hover{
@@ -44,12 +52,28 @@ p{
 .information{
     background-color: white;
     width: 95%;
-    height: 500px;
+    height: 600px;
     position: absolute;
     top: 400px;
-    left: 60px;
-
+    left: 40px;
+    right: 30px;
 }
+
+.download_cv{
+    background-color: #1D1D2D;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    clip-path: ellipse();
+}
+
+.name{
+    font-size:  50px;
+}
+.span-inf-ob{
+    font-size: 40px;
+}
+
 .waves{
     position: relative;
     width: 100%;
@@ -78,8 +102,7 @@ p{
 
 .write-inf{
     display: inline-block;
-    padding-left:400px ;
-    padding-top: 0%;
+    padding-left:30px ;
     font-size: 30px;
 }
 
@@ -87,7 +110,7 @@ p{
 
 nav{
     position: relative;
-    top:1300px;
+    top:1000px;
 }
 
 
@@ -99,7 +122,7 @@ nav{
 
 .box{
     background-color: #1D1D2D;
-    color: #259188;
+    color: #1dd6c7;
     font-size: 50px;
     text-align: center;
 
@@ -114,33 +137,66 @@ nav{
     padding-top: 30px;
 
 }
+.educational{
+    background-color: white;
+    height: 600px;
+}
+
+.square{
+    background-color: #1D1D2D;
+    display: inline-block;
+    width: 550px;
+    height: 400px;
+    margin: 50px; 
+    /* margin-left: 110px; */
+    padding: 20px;
+    border: 15px  #1dd6c7 double;
+}
+
+.img-educ{
+    width: 550px;
+    height: 200px;
+}
+
+.Zay{
+    text-align: center;
+    font-size:30px;
+    color: white;
+    font-weight: bolder;
+}
 
 .education1 , .education2{
     text-align: start;
-    padding-left: 40px;
-    font-size:30px;
-    font-weight: bolder;
+    font-size:20px;
+    color: white;
 }
 
 /* ---------------------------------------------------------------------- */
 .LOGO{
-    height: 600px;
+    height: 700px;
 }
 
 .grid1{
     display: grid;
-    grid-template-columns: repeat(2,1200px);
+    grid-template-columns: repeat(2,720px);
     grid-template-rows: 1fr 150px 150px ;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.img-logo{
+    padding-left:30px ;
 }
 
 .img-logo:hover{
-    background-color: #25918849;
+    background-color: #51525249;
 }
 
 .left-project1{
     padding-left: 200px;
     padding-top: 30px;
     padding-bottom: 30px;
+    border-left: 15px #1dd6c7 dashed;
+    border-top: 15px #1dd6c7 dashed;
 }
 
 .left-project2 {
@@ -150,6 +206,7 @@ nav{
     font-weight: bolder;
     grid-column:1/2 ;
     grid-row: 2/3;
+    border-left: 15px #1dd6c7 dashed;
 }
 
 .left-project3{
@@ -159,6 +216,8 @@ nav{
     font-weight: bolder;
     grid-column:1/2 ;
     grid-row: 3/4;
+    border-left: 15px #1dd6c7 dashed;
+    border-bottom: 15px #1dd6c7 dashed;
 }
 
 .project1{
@@ -167,6 +226,9 @@ nav{
     grid-column:2/3;
     grid-row: 1/2;
     padding-bottom: 30px;
+    border-left: 15px #1D1D2D dashed;
+    border-top: 15px #1D1D2D dashed;
+    border-right: 15px #1D1D2D dashed;
 }
 
 .logo-YPE{
@@ -175,7 +237,6 @@ nav{
 }
 
 .logo-cv{
-    clip-path: circle();
     width: 190px;
     height: 190px;
 }
@@ -188,7 +249,8 @@ nav{
     font-weight: bolder;
     grid-column:2/3;
     grid-row: 2/3;
-
+    border-left: 15px #1D1D2D dashed;
+    border-right: 15px #1D1D2D dashed;
 }
 
 .project3{
@@ -198,12 +260,15 @@ nav{
     font-weight: bolder;
     grid-column:2/3 ;
     grid-row: 3/4;
+    border-left: 15px #1D1D2D dashed;
+    border-right: 15px #1D1D2D dashed;
+    border-bottom: 15px #1D1D2D dashed;
 }
 /* ---------------------------------------------------------------------- */
 
 .grid2{
     display: grid;
-    grid-template-columns: repeat(2,1200px);
+    grid-template-columns: repeat(2,900px);
     grid-template-rows: repeat(2,1fr);
 }
 
@@ -330,83 +395,15 @@ nav{
     grid-row: 2/3;
 }
 
-.skill-bar-right{
-    width: 50%;
-    height: 35px;
-    position: relative;
-    background-color: #259188;
-    border-radius: 1000px;
-    text-transform: uppercase;
-    margin-top:20px  ;
-    margin-bottom:20px  ;
+.logo-html-css{
+    height: 189px;
+    width: 350px;
 }
-
-.skill_area-right{
-    font-size: 16px;
-    z-index: 1;
-    position: absolute;
-    margin-top: 10px;
-    margin-left: 15px;
-    text-shadow: none;
-    color: white;
-
-}
-
-.percentage-right{
-    font-size: 16px;
-    z-index: 3;
-    position: relative;
-    margin-top: 10px;
-    margin-right: 15px;
-    float: right;
-    text-shadow: none;
-    color: white;
-}
-
-
-#Html{
-    width: 93%;
-    animation: animate-Html 3s;
-    height: 35px;
-    position: relative;
-    border-radius: 1000px;
-    background-color: #1D1D2D;
-
-}
-
-#CSS{
-    width: 90%;
-    animation: animate-CSS 3s;
-    height: 35px;
-    position: relative;
-    border-radius: 1000px;
-    background-color: #1D1D2D;
-    
-}
-
-
-@keyframes animate-Html{
-    from{width: 0px;}
-    to{width: 93%;}
-}
-
-@keyframes animate-CSS{
-    from{width: 0px;}
-    to{width: 90%;}
-}
-
 /* ---------------------------------------------------------------------- */
-
-/* .left-experience , .experience{
-    text-align: start;
-    padding-left: 40px;
-    font-size:30px;
-    font-weight: bolder;
-} */
 
 .grid3{
     display: grid;
-    grid-template-columns: repeat(2,900px);
+    grid-template-columns: repeat(2,700px);
     grid-template-rows: repeat(2,1fr);
 }
 
@@ -452,9 +449,17 @@ nav{
 }
 
 .small-size-ex{
-    height: 400px;
+    height: 480px;
 }
 
+.square-exper{
+    background-color: #259188;
+    border: 15px #1D1D2D double;
+    color: white;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
 
 
 /* ---------------------------------------------------------------------- */
@@ -469,16 +474,17 @@ footer{
 }
 
 footer a{
-    font-size: 30px;
+    font-size: 40px;
     color: white;
-    padding: 5px;
-     padding-left: 50px;
-     float: right;
-    
+    float: right;
+    padding: 5px 50px;
+}
+.span-inf{
+    color: white;
 }
 
 footer img{
-    height: 30px;
+    height: 40px;
 }
 
 
